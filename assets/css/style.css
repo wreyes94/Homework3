@@ -1,0 +1,17 @@
+body{
+    background-image: url("/assets/images/background.png");
+}
+
+.container{
+    background-color: white;
+}
+
+#picture{
+    width: 100%;
+    height: 300px;
+    margin: auto;
+}
+
+p{
+    font-size: 25px;
+}
