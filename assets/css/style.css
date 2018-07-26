@@ -2,9 +2,9 @@ body{
     background-image: url("../images/back.png");
 }
 
-.container{
-    background-color: white;
-}
+/*.container{*/
+    /*background-color: white;*/
+/*}*/
 
 #picture{
     width: 100%;
