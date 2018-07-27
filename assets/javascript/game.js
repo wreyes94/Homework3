@@ -1,6 +1,6 @@
 
 var word_count = 0;
-var word_list = ["soccer","football","racquetball","swimming","tennis","basketball","volleyball", "bowling"];
+var word_list = ["soccer","bowling","football","swimming","basketball","volleyball"];
 
 var buttonsClicked = ["1"];
 
@@ -30,7 +30,8 @@ function newWord(){
 }
 
 function reset(){
-
+    var div = document.getElementById("answer");
+    div.removeChild(div.firstChild);
     startPoint();
     var count = 0;
     document.getElementById("counter").innerHTML = "Number Of Guesses Left: " + (10 - count);
@@ -46,7 +47,6 @@ function isDuplicate(user_answer){
     }
     return false;
 }
-
 
 document.onkeyup = function(event) {
     var randomWord = word_list[word_count-1];
@@ -73,6 +73,7 @@ document.onkeyup = function(event) {
             count = -1;
             buttonsClicked = ["1"];
         }
+
         if (overflow === 0){
             count++
         }
